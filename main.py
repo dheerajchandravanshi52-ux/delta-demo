@@ -9,7 +9,7 @@ delta_client = DeltaRestClient(
 )
 
 PRODUCT_ID = 84
-ORDER_SIZE = 1.5
+ORDER_SIZE = 10
 
 # Position state (VERY IMPORTANT)
 current_position = None  # None | "LONG" | "SHORT"
@@ -89,4 +89,5 @@ def handle_signal(signal):
 
     elif "SELL" in signal:
         sell()
+
 
